@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portofolio.css">
+    <script src="https://kit.fontawesome.com/754b8ef26a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"> 
+        <div class="container">  
+             <nav>  
+ <div class="logo"> JOHNSON </div>
+               
+                <ul id="sidemenu"> 
+                     <li>  <a href="#header"> Home </a></li>
+                  <li>  <a href="#about"> About </a></li>
+                  <li>  <a href="#services"> Services </a></li>
+                 <li>  <a href="#portofolio"> portofolio </a></li>
+                  <li>  <a href="#contact"> Contact </a></li>
+                  <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="opening">   
+            <div class="text">   
+                <p>   Hi, I am <span>  Johnson</span>  Maina</p>
+                <h1> Front End Developer  </h1>
+                <button type="submit" class="hire"> Hire Me</button>
+                </div>
+                <div class="imag"> <img src="C:\Users\HP\Desktop\project ba\IMG-20210610-WA0008.jpg"  >   </div>
+            </div>
+            
+           
+
+        </div>
+    </div>
+    
+    <!-----about--->
+    <div id="about">
+        <div class="container"> 
+            <div class="row">
+                <div class="col1">
+                    <img src="C:\Users\HP\Desktop\project ba\IMG-20210610-WA0009.jpg" width="350px" height="450px">
+                </div>
+                <div class="col2">
+                    <h2 class='subtitle'>   About Me </h2>
+                    <p>   The background-size property is used to set the background image size using CSS. Use height and width property to set the size of the background image</p>
+                    <div class="tabtitles">  
+                        <p class="tab-links activelink" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links" onclick = "opentab('experience')"> Experience</p>
+                        <p class="tab-links" onclick ="opentab('Education')" > Education</p>
+                    </div>
+                    <div class="tab-contents activetab" id="skills">  
+                        <ul>  
+                            <li><span>  UI/UX</span><br>Designing Web/App Interface   </li>
+                            <li><span>  Web development</span><br>Web site development   </li>
+                            <li><span>  App development</span><br>building android/ios apps   </li>
+                         </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">  
+                        <ul>  
+                            <li><span>  2021-present</span><br>teaching at rvist   </li>
+                            <li><span>  2019-2021</span><br>safaricom  </li>
+                            <li><span> 2017-2019</span><br>finetech int corporation </li>
+                         </ul>
+                    </div>
+                    <div class="tab-contents" id="education">  
+                        <ul>  
+                            <li><span>  2016</span><br> rift valley institute of technology   </li>
+                            <li><span> 2016</span><br>boma institute of technology   </li>
+                            <li><span>  2014</span><br>excel high school   </li>
+                         </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>   
+    </div>
+    <!--services-->
+    <div id="services">
+
+        <div class="container">
+            <h2 class='subtitle'> My Services</h2>
+            <div class="serviceslist">
+                <div>  
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Design  </h2>
+                    <p>    The background-size property is used to set the background image size using CSS. Use height and</p>
+                    <a href="#">  learn more</a>
+                </div>
+
+<div>  
+    <i class="fa-solid fa-crop"></i>
+                    <h2> UI/UX Design  </h2>
+                    <p>    The background-size property is used to set the background image size using CSS. Use height and</p>
+                    <a href="#">  learn more</a>
+                </div>
+                <div>  
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2> APP Design  </h2>
+                    <p>    The background-size property is used to set the background image size using CSS. Use height and</p>
+                    <a href="#">  learn more</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!---porofolio-->
+    <div id="portofolio">
+        <div class="container">
+            <h2 class='subtitle'> My Work</h2>
+            <div class="worklist">
+                <div class="work">
+                    <img src="C:\Users\HP\Desktop\project ba\pexels-idriss-meliani-2982449.jpg">
+                    <div class="layer"> 
+                        <h3>  Social Media App</h3>
+                        <p>      The background-size property is used to set the background image size using CSS.   </p>
+                        <a href=""> <i class="fa-solid fa-arrow-up-right-from-square"></i>  </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\HP\Desktop\project ba\pexels-lucas-allmann-1378425.jpg">
+                    <div class="layer"> 
+                        <h3>  music App</h3>
+                        <p>      The background-size property is used to set the background image size using CSS.   </p>
+                        <a href=""> <i class="fa-solid fa-arrow-up-right-from-square"></i>  </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\HP\Desktop\project ba\pexels-pixabay-159490.jpg">
+                    <div class="layer"> 
+                        <h3>  food App</h3>
+                        <p>      The background-size property is used to set the background image size using CSS.   </p>
+                        <a href=""> <i class="fa-solid fa-arrow-up-right-from-square"></i>  </a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn"> see more</a>
+        </div>
+
+
+    </div>
+    <!-------contact---->
+    <div id="contact">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="contleft">
+                    <h1 class="subtitle">contact me  </h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>  contactme@mainajohnson</p>
+                    <p> <i class="fa-solid fa-phone"></i> 078788990</p>
+                    <div class="socialicons">
+                        <a href="#">  <i class="fa-brands fa-facebook"></i> </a>
+                        <a href="#">  <i class="fa-brands fa-twitter"></i> </a>
+                        <a href="#">  <i class="fa-brands fa-instagram"></i> </a>
+                        <a href="#">  <i class="fa-brands fa-linkedin"></i> </a>
+                    </div>
+                    <a href="C:\Users\HP\Desktop\project ba\Tree - Cossyimages (17).jpg" class="btn btn2" download>    Download CV</a>
+                </div>
+                <div class="contright">
+                    <form  name="submit-to-google-sheet">  
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" row="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">  Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>  copyright <i class="fa-regular fa-copyright"></i> made in 2022 by Johnson maina<i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+   <script>  
+const tablinks =document.getElementsByClassName("tab-links");
+    const tabcontents =document.getElementsByClassName("tab-contents");
+    function opentab(tabname){    
+    for(tablink of tablinks){
+        tablink.classlist.remove("activelink");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classlist.remove("activetab");
+    }
+}
+event.target.classlist.add("activelink");
+document.getElementById(tabname).classList.add("activetab");
+</script>
+<script>   
+var sidemeu=document.getElementById("sidemenu");
+function openmenu(){
+    sidemeu.style.right="0";
+
+}
+function closemenu(){
+    sidemeu.style.right="-200px";
+
+}
+
+</script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfVD-pf8CeHmsNccVqwEPN0T_vHHSjuzUxP80G8VqURAFF4dmOsY7HHJJVfMgG_6tV/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML=" Your message was sent successfully!"
+            setTimeout(() => {msg.innerHTML=''
+                
+            }, 1000);
+            form.reset
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

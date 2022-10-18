@@ -1,0 +1,368 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgb(156, 22, 22),rgb(8, 122, 52));
+}
+
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgb(156, 22, 22),rgb(8, 122, 52));
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+.active{
+    background-color: rgb(143, 237, 100);
+    
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    padding:2% 6%;
+    align-items: center;
+}
+.navlinks{
+    text-align:right;
+    flex:1;
+}
+.navlinks ul li{
+    list-style: none;
+    display:inline-block;
+    padding:10px 10px;
+    position: relative;
+    border-radius: 3px solid yellow;
+    border-radius: 5px;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color:azure;
+    font-size: 20px;
+    border-radius: 3px solid yellow;
+    border-radius: 5px;
+    padding:3px 7px;
+    
+}
+.navlinks ul li a:hover{
+    background-color: crimson;
+    border:2px solid blueviolet;
+    border-radius: 10px;
+    border:none;
+}
+
+.navlinks ul li::after{
+    content:'';
+    height:2px;
+    width:0%;
+    display: block;
+    margin:auto;
+    background: #f2f2f2;
+}
+.navlinks ul li:hover::after{
+    width:100%;
+    transition:0.5s ease-in-out;
+}
+.textbox{
+    color:azure;
+    position:absolute;
+    width:90%;
+    top:50%;
+    left:50%;
+    text-align: center;
+    transform:translate(-50%,-50%);
+  
+   
+}
+.textbox h1{
+    font-size: 62px;
+}
+.textbox p{
+    font-size: 10px 0 40px;
+    font-size: 20px;
+}
+.herobtn{
+    text-decoration: none;
+    color:rgb(222, 245, 245);
+    border:1px solid #f2f2f2;
+    font-size: 20px;
+    display: inline-block;
+    padding:12px 15px;
+    background-color: deeppink;
+    position: relative;
+    cursor:pointer;
+    margin-top: 17px;
+    border-radius: 7px;
+}
+.herobtn:hover{
+    border:1px solid #f2f6;
+    background-color: rgb(11, 43, 184);
+    transition:0.5s;
+}
+@media(max-width:700px){
+    .textbox h1{
+        font-size: 22px;
+    }
+    .navlinks ul li{
+        display:block;
+    }
+    .navlinks{
+        position: absolute;
+        background-color:cornflowerblue;
+        width:200px;
+        height:100vh;
+        top:0;
+        right:0;
+        text-align: left;
+        z-index: 2;
+    }
+
+}
+.course{
+    width:90%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 10px;
+    color:rgb(30, 255, 105);
+}
+.course p{
+     line-height: 22px;
+     font-size: 15px;
+     font-weight: 300;
+     padding:10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.coursecol{
+    flex-basis: 32%;
+    background-color: rgb(29, 9, 2);
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding: 20px 10px;
+    transition: 0.5s;
+    HEIGHT:350px;
+
+}
+h3{
+    text-align: center;
+    margin:10px 0;
+    font-weight: 600;
+    color:crimson;
+}
+.coursecol p{
+    color:burlywood;
+    margin-top: 70px;
+}
+.coursecol:hover{
+    box-shadow: 0 0 50px 0 rgba(182, 200, 25, 0.9);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.campus{
+    width: 90%;
+    text-align: center;
+    padding-top:50px;
+    margin:auto;
+  
+}
+.campus h1{
+    font-size: 40px;
+    color:rgb(30, 255, 105);
+}
+.campuscol{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+   position:relative;
+    overflow: hidden;
+    height:300px;
+}
+.campuscol:hover{
+    box-shadow: 20px 0 20px 0 rgba(243, 0, 43, 1);
+    background-color: rgb(251, 127, 255);
+}
+
+.campo{
+    top:100px;
+    left:100px;
+    position: absolute;
+    background: transparent;
+}
+.campuscol .campo h3{
+    color:rgb(0, 110, 255);
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+}
+@media(max-width:700px){
+    .campuscol img{
+        display: block;
+        height:250px;
+        width: 450px;
+        overflow: hidden;
+    }
+}
+/*
+.Campuscol .campo h3{
+    font-weight: 800;
+    width:100%;
+    color:rgb(0, 102, 255);
+    font-size: 25px;
+    left:50%;
+    bottom:0;
+    transform: translate(-50%);
+    position: absolute;
+    opacity:0;
+    transition:0.5s;
+}
+*/
+
+
+
+.facility{
+    margin:auto;
+    width:90%;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.facility h5{
+    color:rgb(30, 255, 105);
+}
+
+.facility h1{
+    font-size: 40px;
+    color:rgb(30, 255, 105);
+}
+.facilitiescol{
+    flex-basis: 31%;
+    border-radius: 6px;
+    text-align:center;
+    margin-bottom: 5%;
+    overflow: hidden;
+    height:400px;
+
+}
+.campus p{
+    color:rgb(30, 255, 105);
+}
+
+.facilitiescol:hover{
+    box-shadow: 0 0 25px 0 rgb(10, 205, 240);
+
+}
+
+.facilitiescol img{
+    width:100%;
+    border-radius: 10px;
+}
+.facilitiescol h3{
+
+font-size:2rem;
+margin-top: 15px;
+margin-bottom: 16px;
+
+}
+.facilitiescol p{
+padding: 0;
+}
+.testimonials{
+    width:100%;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.testimonials:hover{
+    box-shadow: 0 0 25px 0 rgba(150,200,100,1);
+}
+.testimonialscol{
+    padding: 10px;
+    margin: 10px;
+}
+.testimonials h1{
+    font-size: 30px;
+    font-weight: 600;
+    color:rgb(30, 255, 105);
+    
+}
+.testimonials p{
+    color:rgb(30, 255, 105);
+}
+.testimonialcol{
+    flex-basis: 44%;
+    margin-bottom: 5%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 25px;
+    background-color: aliceblue;
+    cursor: pointer;
+    display: flex;
+
+}
+.testimonialcol img{
+    margin-left: 5%;
+    margin-right:5% ;
+    height: 70px;
+    border-radius: 50%;
+
+}
+.testimonialcol p{
+    padding: 0;
+
+}
+.testimonialcol h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.cta{
+    margin:50px auto;
+    width:80%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta{
+    margin-bottom: 20px;
+}
+.cta:hover{
+    border-radius: 20px;
+    box-shadow: 0 0 25px 0 rgba(230, 138, 0, 0.9);
+}
+@media(max-width:700px){
+    .cta h1{
+        font-size: 15px;
+    }
+}
+.footer{
+    width:100%;
+    text-align: center;
+    padding: 30px 0;
+    background-image: linear-gradient(to right,rgba(2,155,120,1),rgba(170,100,255,1));
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 1.52rem;
+}
+.footer:hover{
+    border-radius: 10px;
+    box-shadow: 0 0 23px 1 rgba(43, 200, 243, 1);
+}
